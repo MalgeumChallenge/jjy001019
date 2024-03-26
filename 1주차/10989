@@ -1,0 +1,10 @@
+N = int(input())
+result = [0]*10001
+
+for _ in range(N):
+    num = int(input())
+    result[num] += 1
+    
+for idx, freq in enumerate(result):
+    for _ in range(freq):
+        print(idx)
